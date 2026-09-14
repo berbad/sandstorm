@@ -2,6 +2,9 @@ name: build_and_test
 
 on: [push, pull_request, workflow_dispatch]
 
+permissions:
+  contents: read
+
 env:
   CCACHE_DIR: ${{ github.workspace }}/.ccache"
 jobs:
