@@ -3,6 +3,7 @@ import logging
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from html.parser import HTMLParser
+from urllib.parse import urlsplit
 
 from mkdocs.config import load_config
 from mkdocs.commands.build import build
@@ -18,7 +19,7 @@ class Scripts(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag == "script" and "cdnjs.cloudflare.com" in attrs.get("src", ""):
+        if tag == "script" and urlsplit(attrs.get("src", "")).hostname == "cdnjs.cloudflare.com":
             self.cdn.append(attrs)
 
 
