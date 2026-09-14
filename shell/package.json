@@ -51,7 +51,7 @@
     "nodemailer": "^6.8.0",
     "nodemailer-smtp-pool": "^2.8.3",
     "openid-client": "^4.9.1",
-    "smtp-server": "^1.17.0",
+    "smtp-server": "^3.18.3",
     "stripe": "^8.222.0",
     "xml-crypto": "^2.1.5",
     "xml2js": "^0.2.8",
