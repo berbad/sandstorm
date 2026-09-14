@@ -8,6 +8,8 @@ search_index_only: false
 
 highlightjs: true
 hljs_languages: []
+# Map each optional language to its SHA-384 digest before enabling it.
+hljs_language_integrity: {}
 
 include_homepage_in_sidebar: true
 prev_next_buttons_location: bottom

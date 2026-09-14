@@ -151,16 +151,16 @@ module.exports["Test backup and restore"] = function(browser) {
     })
     .perform(function (client, done) {
       // Potential async stuff happening, call done() when ready
-      downloadPromise.then(function (fileDownloaded) {
+      downloadPromise.then(async function (fileDownloaded) {
         downloadPath = fileDownloaded;
         client.assert.ok(fileDownloaded !== undefined, "a zip was downloaded");
         var data = fs.readFileSync(fileDownloaded);
-        var zip = new JSZip(data);
+        var zip = await JSZip.loadAsync(data);
         var metadata = zip.file("metadata");
         client.assert.ok(!!metadata, "" + fileDownloaded + " contains file /metadata");
         var stateFile = zip.file("data/state");
         client.assert.ok(!!stateFile, "" + fileDownloaded + " contains file /data/state");
-        client.assert.ok(stateFile.asText() === randomValue, "" + fileDownloaded + "/data/state contains the expected value " + randomValue);
+        client.assert.ok((await stateFile.async("string")) === randomValue, "" + fileDownloaded + "/data/state contains the expected value " + randomValue);
         done();
       }).catch(function (error) {
         downloadError = error;

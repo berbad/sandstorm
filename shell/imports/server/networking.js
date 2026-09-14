@@ -16,7 +16,7 @@
 
 import { Meteor } from "meteor/meteor";
 import Dns from "dns";
-import Ip from "ip";
+import Ip from "./ip-address";
 import Url from "url";
 
 import { SPECIAL_IPV4_ADDRESSES, SPECIAL_IPV6_ADDRESSES } from "/imports/constants";

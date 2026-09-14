@@ -16,7 +16,7 @@
     "chai": "^2.3.0",
     "es6-promise": "^3.0.2",
     "firefox-profile": "^4.2.0",
-    "jszip": "^2.5.0",
+    "jszip": "^3.10.1",
     "mailcomposer": "^0.2.12",
     "mailparser": "0.5.1",
     "selenium-standalone": "^6.24.0",

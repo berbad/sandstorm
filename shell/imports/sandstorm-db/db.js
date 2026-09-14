@@ -2317,7 +2317,7 @@ SandstormDb.escapeMongoKey = (key) => {
   //   https://docs.mongodb.org/manual/faq/developers/#dollar-sign-operator-escaping
   // and seems to be a de facto standard, for example:
   //   https://www.npmjs.com/package/mongo-key-escape
-  return key.replace(".", "\uFF0E").replace("$", "\uFF04");
+  return key.replace(/\./g, "\uFF0E").replace(/\$/g, "\uFF04");
 };
 
 SandstormDb.escapeMongoObject = (obj) => {

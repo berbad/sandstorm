@@ -2013,10 +2013,10 @@
       "version": "git+https://github.com/sandstorm-io/intro.js.git#8e1c7604f251ec874bf4ae4d7b4f11a14cee697e",
       "from": "git+https://github.com/sandstorm-io/intro.js.git#8e1c7604f251ec874bf4ae4d7b4f11a14cee697e"
     },
-    "ip": {
-      "version": "1.1.8",
-      "resolved": "https://registry.npmjs.org/ip/-/ip-1.1.8.tgz",
-      "integrity": "sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg=="
+    "ipaddr.js": {
+      "version": "2.5.0",
+      "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-2.5.0.tgz",
+      "integrity": "sha512-aq+t5NAc+cS6rZQQVWC2x98CPqGtKKTMDd4Gaodv0wShnItdKg/51djkGJ1hqH+Oy0ivDftCbSLCQob8zso01w=="
     },
     "ipv6-normalize": {
       "version": "1.0.1",
@@ -3162,9 +3162,9 @@
       "integrity": "sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA=="
     },
     "nodemailer": {
-      "version": "6.8.0",
-      "resolved": "https://registry.npmjs.org/nodemailer/-/nodemailer-6.8.0.tgz",
-      "integrity": "sha512-EjYvSmHzekz6VNkNd12aUqAco+bOkRe3Of5jVhltqKhEsjw/y0PYPJfp83+s9Wzh1dspYAkUW/YNQ350NATbSQ=="
+      "version": "9.1.1",
+      "resolved": "https://registry.npmjs.org/nodemailer/-/nodemailer-9.1.1.tgz",
+      "integrity": "sha512-izw9mVKFix6YSnC9eLgV6g1opl9DUlRio9ZNcq+Wu9Ujn2UwF+8Nl0B8nz22kEC+CTZCvinkxwJ0DeFbb6NwcQ=="
     },
     "nodemailer-fetch": {
       "version": "1.6.0",
@@ -4001,17 +4001,18 @@
       }
     },
     "xml2js": {
-      "version": "0.2.8",
-      "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.2.8.tgz",
-      "integrity": "sha512-ZHZBIAO55GHCn2jBYByVPHvHS+o3j8/a/qmpEe6kxO3cTnTCWC3Htq9RYJ5G4XMwMMClD2QkXA9SNdPadLyn3Q==",
+      "version": "0.6.2",
+      "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.6.2.tgz",
+      "integrity": "sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==",
       "requires": {
-        "sax": "0.5.x"
+        "sax": ">=0.6.0",
+        "xmlbuilder": "~11.0.0"
       },
       "dependencies": {
-        "sax": {
-          "version": "0.5.8",
-          "resolved": "https://registry.npmjs.org/sax/-/sax-0.5.8.tgz",
-          "integrity": "sha512-c0YL9VcSfcdH3F1Qij9qpYJFpKFKMXNOkLWFssBL3RuF7ZS8oZhllR2rWlCRjDTJsfq3R6wbSsaRU6o0rkEdNw=="
+        "xmlbuilder": {
+          "version": "11.0.1",
+          "resolved": "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-11.0.1.tgz",
+          "integrity": "sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA=="
         }
       }
     },

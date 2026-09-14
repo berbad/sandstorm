@@ -1,0 +1,13 @@
+{
+  "name": "sandstorm-dependency-security-smoke",
+  "private": true,
+  "scripts": {
+    "test": "node networking.js && node libraries.js"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.5.0",
+    "jszip": "3.10.1",
+    "nodemailer": "9.1.1",
+    "xml2js": "0.6.2"
+  }
+}
